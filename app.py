@@ -206,7 +206,7 @@ with st.sidebar:
 st.markdown("""
 <div class="chat-header">
     <h1>🍵 مبارك ولد حميدة</h1>
-    <p>تاجر شاي وتمر — نواكشوط</p>
+    <p>تاجر يبيع الوركة  — نواكشوط</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -214,7 +214,7 @@ st.markdown("""
 
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "bot", "text": "السلام عليكم! أنا مبارك، كيف أقدر أخدمك اليوم؟ 🍵"}
+        {"role": "bot", "text": "السلام عليكم! أنا مبارك، كيف   انت شدور 🍵"}
     ]
 
 # ── LOAD MODEL ────────────────────────────────────────────────────────────────
@@ -243,7 +243,7 @@ col1, col2 = st.columns([5, 1])
 with col1:
     user_input = st.text_input(
         label     = "رسالتك",
-        placeholder = "اكتب سؤالك هنا...",
+        placeholder = "اكتب سؤالك هنون...",
         label_visibility = "collapsed",
         key       = "input_box",
     )
@@ -254,7 +254,7 @@ if send and user_input.strip():
     question = user_input.strip()
     st.session_state.messages.append({"role": "user", "text": question})
 
-    with st.spinner("مبارك يفكر... 🍵"):
+    with st.spinner("مبارك يتخمم... 🍵"):
         answer = generate_response(
             tokenizer, model, question,
             max_new_tokens = max_tokens,
