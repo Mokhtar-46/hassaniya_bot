@@ -4,7 +4,8 @@ A simple Arabic Hassaniya chatbot built with Streamlit and Hugging Face Transfor
 
 ## About
 
-This repository hosts a conversational app for a Hassaniya dialect model named **مبارك ولد حميدة**. It can run it by downloading the model artifact automatically from Weights & Biases.
+This repository hosts a conversational app for a Hassaniya dialect model named **مبارك ولد حميدة**.He is playing the caracter of  a local tea merchant capable of handling basic inquiries regarding pricing, stock levels, and price negotiations. Additionally, he can provide local insights, such as current market and neighborhood news. 
+It can run it by downloading the model artifact automatically from Weights & Biases.
 
 The app is designed for Arabic dialect chat in a polished Streamlit UI with right-to-left layout and custom styling.
 
