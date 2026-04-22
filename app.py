@@ -188,11 +188,7 @@ def generate_response(tokenizer, model, question,
 # ── SIDEBAR ───────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.markdown("### ⚙️ الإعدادات")
-    temperature  = st.slider("درجة الإبداع", 0.5, 1.2, 0.8, 0.05)
-    rep_penalty  = st.slider("عقوبة التكرار", 1.0, 2.0, 1.3, 0.1)
-    max_tokens   = st.slider("أقصى طول للجواب", 30, 150, 80, 10)
-    st.markdown("---")
+    
     if st.button("🗑️ مسح المحادثة"):
         st.session_state.messages = []
         st.rerun()
@@ -214,7 +210,7 @@ st.markdown("""
 
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "bot", "text": "السلام عليكم! أنا مبارك، كيف   انت شدور 🍵"}
+        {"role": "bot", "text": "السلام عليكم! أنا مبارك،  انت شدور "}
     ]
 
 # ── LOAD MODEL ────────────────────────────────────────────────────────────────
@@ -263,7 +259,7 @@ if send and user_input.strip():
         )
 
     if not answer:
-        answer = "الله يسهل، ما فهمتش مليح، عاود قول"
+        answer = "  هيه !, ذ مافهمتو "
 
     st.session_state.messages.append({"role": "bot", "text": answer})
     st.rerun()
