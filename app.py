@@ -148,7 +148,7 @@ def load_model():
         return tokenizer, model
 
     # Download from W&B artifact
-    wandb_key = os.getenv("WANDB_API_KEY", "")
+    wandb_key = "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"
     if not wandb_key:
         st.error("⚠️ MODEL_PATH not found and WANDB_API_KEY not set. See sidebar.")
         st.stop()
